@@ -1,0 +1,12 @@
+# Web framework 
+# ----------------------------------------------
+Flask==1.1.2   # https://pypi.org/project/Flask/
+
+# Storages 
+#-----------------------------------------------
+neo4j==4.1.0   # https://pypi.org/project/neo4j/
+redis==3.4.1   # https://pypi.org/project/redis/
+
+# Connectors (for deploy)
+# ----------------------------------------------
+uWSGI==2.0.19.1

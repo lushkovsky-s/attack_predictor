@@ -1,0 +1,30 @@
+{
+   "type": "object",
+   "properties": {
+      "vms": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "vm_id": { "type": "string" },
+              "name": { "type": "string" },
+              "tags": { "type": "array", "items": { "type": "string" } } 
+            },
+            "required": ["vm_id", "name", "tags"]
+          }  
+      },
+      "fw_rules": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+                "fw_id": { "type": "string" },
+                "source_tag": { "type": "string" },
+                "dest_tag": { "type": "string" }
+            },
+            "required": ["fw_id", "source_tag", "dest_tag"]
+          }
+      }
+   },
+   "required": ["vms", "fw_rules"]
+}
